@@ -136,6 +136,9 @@ button:hover {
     text-align: center;
     padding: 100px;
     height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .quote-text{
     font-size: 30px;

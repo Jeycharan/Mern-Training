@@ -1,0 +1,75 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+.container {
+    display: grid;
+    grid-template-columns: 120px 120px 120px 120px 120px ;
+    grid-template-rows: 180px 180px 180px 180px;
+    gap: 20px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.box {
+    background-color: #00ff4c;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ .box1 { 
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.box2 { 
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.box3 { 
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.box4 { 
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.box5 { 
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.box6 { 
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 5;
+} 
+@media (max-width: 600px) {
+    .box{
+        background-color: lightblue;
+    }
+    .container {
+        grid-template-columns: 60px 60px 60px 60px 60px;
+        grid-template-rows: 60px 60px 60px 60px;
+    }
+    
+}
